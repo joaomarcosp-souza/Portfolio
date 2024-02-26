@@ -27,7 +27,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    background-color: #ffffff;
+    background-color: #fff;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
     padding: 0px 5%;
 }
@@ -53,24 +53,13 @@ nav ul li a {
 .apresentacao-texto {
     line-height: 0px;
     margin: 45px 0px 25px;
-}
-
-.apresentacao-texto {
     position: absolute;
-    left: 13%;
-    top: 42%;
+    left: 15%;
+    top: 40%;
     transform: translate(-13%, -42%);
 }
 
-/*  */
 .apresentacao-texto p:nth-child(1) {
-    font-family: calibri;
-    font-weight: bold;
-    color: #6d6d6d;
-    font-size: 22px;
-}
-
-.apresentacao-texto p:nth-child(2) {
     font-family: calibri;
     font-weight: bold;
     letter-spacing: 1px;
@@ -78,9 +67,29 @@ nav ul li a {
     font-size: 60px;
 }
 
-.apresentacao-texto p:nth-child(3) {
+.apresentacao-texto p:nth-child(2) {
     font-family: myriad pro regular;
     color: #403e3e;
     font-size: 30px;
     line-height: 30px;
+}
+
+.git-botao {
+    background-color: #fff;
+    color: #191919;
+    border: 2px solid #191919;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.git-botao:hover {
+    color: #fff;
+    background-color: #191919;
 }
