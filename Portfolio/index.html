@@ -3,51 +3,55 @@
 <head>
     <title>Portfolio</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <section>
-        <header>
-            <!-- Navegator para o menu -->
-            <nav>
-                <a href="#" class="logo">Logo</a>
-                <ul class="texto_menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#formacao">Formação</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <!-- Navegator para o menu -->
+        <nav>
+            <a href="#" class="logo">Logo</a>
+            <ul class="texto_menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
+    <main>
+        <section>
             <!-- Sobre Min/Inicio -->
             <div id="inicio" class="apresentacao-texto">
                 <p>Sobre min</p>
                 <p>Eu sou João Marcos</p>
-                <p> Cursando 3° Ano de Engenharia de Software. <br> Portfolio para a disciplina de Programação Web.</p>
+                <p>Atualmente cursando 3° Ano de Engenharia de Software. <br> Portfolio para a disciplina de Programação Web.</p>
                 <a href="https://github.com/joaomarcosp-souza"><button class="git-botao button">Github</button></a>
             </div>
+        </section>
 
+        <section>
             <!-- Habilidades Div -->
-            <div id="habilidades">
+            <div id="habilidades" class="card">
+                <p>Habilidades</p>
             </div>
+        </section>
 
-            <!-- Formcação Div -->
-            <div id="formacao">
-            </div>
+        <!-- Formcação Div -->
+        <div id="formacao" class="card">
+            <p>Formação</p>
+        </div>
 
-            <!-- Contato Div -->
-            <div id="contato">
-            </div>
+        <!-- Contato Div -->
+        <div id="contato" class="card">
+            <p>Contato</p>
+        </div>
+    </main>
+    <footer>
 
-        </main>
-        <footer>
-
-        </footer>
-    </section>
+    </footer>
 </body>
 
 </html>

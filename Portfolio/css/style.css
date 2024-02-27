@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fff;
     margin-right: 0px;
@@ -42,6 +46,7 @@ nav ul li a {
     font-size: 20px;
     font-weight: 700;
     color: #505050;
+    scroll-behavior: smooth;
 }
 
 nav ul li a:hover{
@@ -104,4 +109,9 @@ nav ul li a:hover{
 .git-botao:hover {
     color: #fff;
     background-color: #191919;
+}
+
+.card{
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
 }
