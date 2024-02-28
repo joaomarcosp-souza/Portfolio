@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+#habilidades {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+.titulo-habilidades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    background: #fff;
+    border-radius: 15px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    color: #191919;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all .2s ease-in-out;
+    margin: auto;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+:root {
+    --card1-gradient-color1: #f12711;
+    --card1-gradient-color2: #f84e2d;
+
+    --card2-gradient-color1: #3f2b96;
+    --card2-gradient-color2: #91b0ff;
+
+
+    --card3-gradient-color1: #11998e;
+    --card3-gradient-color2: #2ab961;
+
+
+    --card4-gradient-color1: #7F00FF;
+    --card4-gradient-color2: #E100FF;
+
+    --card5-gradient-color1: #f12711;
+    --card5-gradient-color2: #f5af19;
+
+
+
+}
+
+.card-cabecalho {
+    height: 200px;
+    width: 100%;
+    background: red;
+    border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
+    display: grid;
+    place-items: center;
+
+}
+
+.card-cabecalho i {
+    color: #fff;
+    font-size: 72px;
+}
+
+.card-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.card-titulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.card-texto {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.card-cabecalho.um {
+    background: linear-gradient(to bottom left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+}
+
+.card-cabecalho.dois {
+    background: linear-gradient(to bottom left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+}
+
+.card-cabecalho.tres {
+    background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+}
+
+.card-cabecalho.quatro {
+    background: linear-gradient(to bottom left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+}
+
+.card-cabecalho.cinco {
+    background: linear-gradient(to bottom left, var(--card5-gradient-color1), var(--card5-gradient-color2));
+}

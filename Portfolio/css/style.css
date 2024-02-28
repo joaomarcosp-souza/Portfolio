@@ -41,7 +41,7 @@ nav ul {
 }
 
 nav ul li a {
-    margin: 20px;
+    margin: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -49,7 +49,7 @@ nav ul li a {
     scroll-behavior: smooth;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #000;
 }
 
@@ -109,9 +109,4 @@ nav ul li a:hover{
 .git-botao:hover {
     color: #fff;
     background-color: #191919;
-}
-
-.card{
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 10%;
 }
