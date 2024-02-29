@@ -1,22 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-
 #habilidades {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 5%;
+    align-items: center;
+    align-content: center;
 }
 
-:root {
-    --card1-gradient-cor1: #f12711;
-    --card1-gradient-cor2: #f84e2d;
-    --card2-gradient-cor1: #3f2b96;
-    --card2-gradient-cor2: #658ef8;
-    --card3-gradient-cor1: #11998e;
-    --card3-gradient-cor2: #2ab961;
-    --card4-gradient-cor1: #7F00FF;
-    --card4-gradient-cor2: #E100FF;
-    --card5-gradient-cor1: #f12711;
-    --card5-gradient-cor2: #f5af19;
+#habilidades-conteudo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+#card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
 }
 
 .titulo-habilidades {
@@ -27,7 +24,7 @@
 }
 
 .card {
-    width: 200px;
+    width: 210px;
     background: #fff;
     border-radius: 15px;
     border: 5px solid #fff;
@@ -44,10 +41,9 @@
 }
 
 .card-cabecalho {
-    height: 200px;
-    width: 100%;
+    height: 180px;
     background: red;
-    border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
+    border-radius: 0% 0% 10% 10%;
     display: grid;
     place-items: center;
 
@@ -62,7 +58,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -72,30 +68,43 @@
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 20px;
+    font-family: sans-serif;
 }
 
 .card-texto {
     text-align: center;
     font-size: 12px;
     margin-bottom: 20px;
+    font-family: sans-serif;
 }
 
 .card-cabecalho.um {
-    background: linear-gradient(to bottom left, var(--card1-gradient-cor1), var(--card1-gradient-cor2));
+    background: #f12711;
 }
 
 .card-cabecalho.dois {
-    background: linear-gradient(to bottom left, var(--card2-gradient-cor1), var(--card2-gradient-cor2));
+    background: #0754ed;
 }
 
 .card-cabecalho.tres {
-    background: linear-gradient(to bottom left, var(--card3-gradient-cor1), var(--card3-gradient-cor2));
+    background: #09a929;
 }
 
 .card-cabecalho.quatro {
-    background: linear-gradient(to bottom left, var(--card4-gradient-cor1), var(--card4-gradient-cor2));
+    background: #7504e6;
 }
 
 .card-cabecalho.cinco {
-    background: linear-gradient(to bottom left, var(--card5-gradient-cor1), var(--card5-gradient-cor2));
+    background: #f8b31f;
+}
+
+.botao-card {
+    border: solid 0px;
+    height: 25px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px 10px;
+    cursor: pointer;
+    background-color: #fff;
 }
