@@ -6,6 +6,19 @@
     padding-top: 5%;
 }
 
+:root {
+    --card1-gradient-cor1: #f12711;
+    --card1-gradient-cor2: #f84e2d;
+    --card2-gradient-cor1: #3f2b96;
+    --card2-gradient-cor2: #658ef8;
+    --card3-gradient-cor1: #11998e;
+    --card3-gradient-cor2: #2ab961;
+    --card4-gradient-cor1: #7F00FF;
+    --card4-gradient-cor2: #E100FF;
+    --card5-gradient-cor1: #f12711;
+    --card5-gradient-cor2: #f5af19;
+}
+
 .titulo-habilidades {
     display: flex;
     align-items: center;
@@ -27,28 +40,6 @@
 
 .card:hover {
     transform: scale(1.1);
-}
-
-:root {
-    --card1-gradient-color1: #f12711;
-    --card1-gradient-color2: #f84e2d;
-
-    --card2-gradient-color1: #3f2b96;
-    --card2-gradient-color2: #91b0ff;
-
-
-    --card3-gradient-color1: #11998e;
-    --card3-gradient-color2: #2ab961;
-
-
-    --card4-gradient-color1: #7F00FF;
-    --card4-gradient-color2: #E100FF;
-
-    --card5-gradient-color1: #f12711;
-    --card5-gradient-color2: #f5af19;
-
-
-
 }
 
 .card-cabecalho {
@@ -80,7 +71,6 @@
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 20px;
-
 }
 
 .card-texto {
@@ -90,21 +80,21 @@
 }
 
 .card-cabecalho.um {
-    background: linear-gradient(to bottom left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+    background: linear-gradient(to bottom left, var(--card1-gradient-cor1), var(--card1-gradient-cor2));
 }
 
 .card-cabecalho.dois {
-    background: linear-gradient(to bottom left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+    background: linear-gradient(to bottom left, var(--card2-gradient-cor1), var(--card2-gradient-cor2));
 }
 
 .card-cabecalho.tres {
-    background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+    background: linear-gradient(to bottom left, var(--card3-gradient-cor1), var(--card3-gradient-cor2));
 }
 
 .card-cabecalho.quatro {
-    background: linear-gradient(to bottom left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+    background: linear-gradient(to bottom left, var(--card4-gradient-cor1), var(--card4-gradient-cor2));
 }
 
 .card-cabecalho.cinco {
-    background: linear-gradient(to bottom left, var(--card5-gradient-color1), var(--card5-gradient-color2));
+    background: linear-gradient(to bottom left, var(--card5-gradient-cor1), var(--card5-gradient-cor2));
 }

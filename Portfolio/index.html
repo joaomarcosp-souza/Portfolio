@@ -7,12 +7,14 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/cards.css" rel="stylesheet">
     <link href="css/sobre.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
     <header>
         <!-- Navegator para o menu -->
-        <nav>
+        <nav id="inicio">
             <a href="#" class="logo">Logo</a>
             <ul class="texto_menu">
                 <li><a href="#inicio">Inicio</a></li>
@@ -26,7 +28,7 @@
     <main>
         <section>
             <!-- Sobre Min/Inicio -->
-            <div id="inicio" class="apresentacao-texto">
+            <div class="apresentacao-texto">
                 <p>Sobre Min</p>
                 <p>Eu sou João Marcos</p>
                 <p>Cursando 3° Ano de Engenharia de Software <br> No Instituto Federal de Educação, Ciência e Tecnologia
@@ -36,63 +38,63 @@
             </div>
         </section>
 
-        <!-- Habilidades Div -->
-        <div id="habilidades">
-            <h3 class="titulo-habilidades">Habilidades</h3>
-            <div class="card">
-                <div class="card-cabecalho um">
-                    <i class="fas fa-code"></i>
+        <section>
+            <!-- Habilidades Div -->
+            <div id="habilidades">
+                <h3 class="titulo-habilidades">Habilidades</h3>
+                <div class="card">
+                    <div class="card-cabecalho um">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="card-conteudo">
+                        <h1 class="card-titulo">Java</h1>
+                        <p class="card-texto">Java é uma linguagem multiplataforma, orientada a objetos.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">Java</h1>
-                    <p class="card-texto">Java é uma linguagem multiplataforma, orientada a objetos e centrada em
-                        rede que pode ser usada como uma plataforma em si.
-                    </p>
+                <div class="card">
+                    <div class="card-cabecalho dois">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div class="card-conteudo">
+                        <h1 class="card-titulo">Python</h1>
+                        <p class="card-texto">Python é uma linguagem de programação de alto nível, script, tipagem
+                            dinâmica e forte.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-cabecalho tres">
+                        <i class="fa-brands fa-critical-role"></i>
+                    </div>
+                    <div class="card-conteudo">
+                        <h1 class="card-titulo">Django</h1>
+                        <p class="card-texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-cabecalho quatro">
+                        <i class="fa-brands fa-css3"></i>
+                    </div>
+                    <div class="card-conteudo">
+                        <h1 class="card-titulo">CSS</h1>
+                        <p class="card-texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-cabecalho cinco">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div class="card-conteudo">
+                        <h1 class="card-titulo">HTML</h1>
+                        <p class="card-texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-cabecalho dois">
-                    <i class="fab fa-css3-alt"></i>
-                </div>
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">Python</h1>
-                    <p class="card-texto">Python é uma linguagem de programação de alto nível, interpretada de
-                        script, imperativa, orientada a objetos, funcional,
-                        de tipagem dinâmica e forte.
-                    </p>
-                </div>
-            </div>
-            <div class="card"> 
-                <div class="card-cabecalho tres">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">Django</h1>
-                    <p class="card-texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-cabecalho quatro">
-                    <i class="fab fa-css3-alt"></i>
-                </div>
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">CSS</h1>
-                    <p class="card-texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-cabecalho cinco">
-                    <i class="fab fa-js-square"></i>
-                </div>
-                <div class="card-conteudo">
-                    <h1 class="card-titulo">HTML</h1>
-                    <p class="card-texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                </div>
-            </div>
-        </div>
+        </section>
 
         <!-- Formcação Div -->
         <div id="formacao">
