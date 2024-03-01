@@ -1,19 +1,7 @@
-#habilidades {
-    align-items: center;
-    align-content: center;
-}
-
 #habilidades-conteudo {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
-}
-
-#card-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5px;
 }
 
 .titulo-habilidades {
@@ -42,11 +30,13 @@
 
 .card-cabecalho {
     height: 180px;
-    background: red;
-    border-radius: 0% 0% 10% 10%;
+    border-radius: 0% 0% 5% 5%;
     display: grid;
     place-items: center;
+}
 
+.card-image {
+    width: 95px;
 }
 
 .card-cabecalho i {
@@ -66,9 +56,11 @@
     text-align: center;
     text-transform: uppercase;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 20px;
     font-family: sans-serif;
+    text-decoration: none;
+    color:  #191919;
 }
 
 .card-texto {
@@ -79,32 +71,32 @@
 }
 
 .card-cabecalho.um {
-    background: #f12711;
+    background: #ec2024;
 }
 
 .card-cabecalho.dois {
-    background: #0754ed;
+    background: #276ea9;
 }
 
 .card-cabecalho.tres {
-    background: #09a929;
+    background: #14342c;
 }
 
 .card-cabecalho.quatro {
-    background: #7504e6;
+    background: #314ddc;
 }
 
 .card-cabecalho.cinco {
-    background: #f8b31f;
+    background: #e44c26;
 }
 
-.botao-card {
-    border: solid 0px;
-    height: 25px;
-    font-family: calibri;
-    font-weight: bold;
-    font-size: 14px;
-    margin: 0px 10px;
-    cursor: pointer;
-    background-color: #fff;
+.separador {
+    margin: 0px 46% 0px 46%;
+    margin-top: -15px;
+    display: flex;
+    border: 1.5px solid #23242b;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
