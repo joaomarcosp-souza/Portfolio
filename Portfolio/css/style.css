@@ -226,26 +226,51 @@ nav ul li a.inicio {
     cursor: pointer;
 }
 
-#contato{
+#contato {
     background-color: #191919;
 }
 
 .titulo-contato {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    padding-top: 15px;
+}
+
+.subtitulo {
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Poppins", sans-serif;
 }
 
-.contao-separador {
+.contato-separador {
     margin: 0px 47% 0px 47%;
     margin-top: -15px;
     display: flex;
-    border: 1.5px solid #23242b;
+    border: 1.5px solid #fff;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+}
+
+
+.dados {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5%;
+}
+
+.dados p:nth-child(1){
+    color: red;
+}
+
+.dados p:nth-child(2) {
+    color: blue;
 }
 
 
