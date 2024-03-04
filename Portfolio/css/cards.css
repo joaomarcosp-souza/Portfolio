@@ -2,13 +2,20 @@
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+
 }
 
-.titulo-habilidades {
+#habilidades {
+    background-color: #f8f8ff;
+    padding-top: 10px;
+    padding-bottom: 80px;
+}
+
+.titulo {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .card {
@@ -58,16 +65,16 @@
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 20px;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     text-decoration: none;
-    color:  #191919;
+    color: #191919;
 }
 
 .card-texto {
     text-align: center;
     font-size: 12px;
     margin-bottom: 20px;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .card-cabecalho.um {
@@ -99,4 +106,9 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+}
+
+.lupa {
+    font-size: 15px;
+    margin-left: 5px;
 }
