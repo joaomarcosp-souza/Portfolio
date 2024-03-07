@@ -30,7 +30,8 @@ nav {
     height: 60px;
     background-color: #fff;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-    padding: 0px 5%;
+    padding: 1rem 5rem;
+    text-transform: uppercase;
 }
 
 nav ul {
@@ -38,9 +39,9 @@ nav ul {
 }
 
 nav ul li a {
-    margin: 30px;
+    transition: color .3s;
+    margin: 25px;
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
     font-weight: 700;
     color: #191919;
     scroll-behavior: smooth;
@@ -247,25 +248,13 @@ nav ul li a.inicio {
     font-family: "Poppins", sans-serif;
 }
 
-.contato-separador {
-    margin: 0px 47% 0px 47%;
-    margin-top: -15px;
-    display: flex;
-    border: 1.5px solid #fff;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-
 .dados {
     display: flex;
     justify-content: space-between;
     padding: 0px 5%;
 }
 
-.dados p:nth-child(1){
+.dados p:nth-child(1) {
     color: red;
 }
 

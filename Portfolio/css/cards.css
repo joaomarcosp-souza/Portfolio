@@ -29,7 +29,10 @@
         rgba(0, 0, 0, 0.23) 0px 6px 6px;
     transition: all .2s ease-in-out;
     margin: auto;
+    flex-direction: column;
+    gap: 48px;
 }
+
 
 .card:hover {
     transform: scale(1.1);
@@ -98,14 +101,18 @@
 }
 
 .separador {
-    margin: 0px 46% 0px 46%;
-    margin-top: -15px;
-    display: flex;
-    border: 1.5px solid #23242b;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    margin-top: -10px;
+    position: absolute;
+    height: 5px;
+    width: 3rem;
+    background: #191919;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.separador.contato {
+    border: 1.5px solid #fff;
 }
 
 .lupa {
