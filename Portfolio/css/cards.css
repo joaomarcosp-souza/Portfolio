@@ -119,17 +119,3 @@
     font-size: 15px;
     margin-left: 5px;
 }
-
-.jslSBL {
-    transition: all 0.4s ease-in-out 0s;
-    cursor: pointer;
-    display: flex;
-    align-items: flex-start;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 360px;
-    height: 460px;
-    border: 1px solid rgba(123, 74, 226, 0.5);
-    border-radius: 16px;
-}
