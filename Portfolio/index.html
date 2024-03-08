@@ -13,15 +13,16 @@
 </head>
 
 <body>
-    <header>
-        <!-- Navagador -->
-        <nav id="inicio">
-            <a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/" class="logo fa-solid fa-jedi"></a>
-            <ul class="texto_menu">
-                <li><a class="inicio" href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-min">Sobre</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
+    <header class="header">
+        <a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/" class="logo fa-solid fa-jedi"></a>
+        <nav class="nav">
+            <input type="checkbox" id="checkbox" class="checkbox" />
+            <label for="checkbox" class="label-menu"><span class="hamburger"></span></label>
+            <ul class="menu" id="menu" role="menu">
+                <li><a class="menu inicio" href="#inicio">Início</a></li>
+                <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a href="#tecnlogias">Tecnologias</a></li>
             </ul>
         </nav>
     </header>
@@ -52,97 +53,90 @@
             </div>
         </div>
 
-        <!-- Habilidades Seção -->
-        <section>
-            <div id="habilidades">
-                <h1 class="titulo">PROJETOS</h1>
-                <span class="separador"></span>
-                <p class="titulo">Projetos feitos para faculdade ou de utilização pessoal.
-                </p>
-                <div id="habilidades-conteudo">
-                    <!-- JAVA CARD -->
-                    <div class="card">
-                        <div class="card-cabecalho um">
-                            <i class="fa-brands fa-java"></i>
-                        </div>
-                        <div class="card-conteudo">
-                            <h1 class="card-titulo"><a target="_blank"
-                                    href="https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-java-programming-language#:~:text=tudo%20%7C%20Recolher%20tudo-,O%20que%20%C3%A9%20o%20Java%3F,dos%20computadores%20e%20dispositivos%20m%C3%B3veis.">
-                                    Java</a>
-                            </h1>
-                            <p class="card-texto">Java é uma linguagem multiplataforma, orientada a objetos.
-                            </p>
-                        </div>
+        <!-- Projetos Seção -->
+        <div id="projetos">
+            <h2 class="titulo">PROJETOS</h2>
+            <span class="separador"></span>
+            <p class="descricao">Projetos feitos para faculdade ou de utilização pessoal.
+            </p>
+            <div id="projetos-conteudo">
+                <!-- JAVA CARD -->
+                <div class="card">
+                    <div class="card-cabecalho um">
+                        <i class="fa-brands fa-java"></i>
                     </div>
-                    <!-- PYTHON CARD -->
-                    <div class="card">
-                        <div class="card-cabecalho dois">
-                            <i class="fa-brands fa-python"></i>
-                        </div>
-                        <div class="card-conteudo">
-                            <h1 class="card-titulo"><a id="card-info" href="https://www.python.org/">Python</a></h1>
-                            <p class="card-texto">Python é uma linguagem de programação com tipagem
-                                dinâmica.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- DJANGO CARD -->
-                    <div class="card">
-                        <div class="card-cabecalho tres">
-                            <img src="img/djangoimg.png" class="card-image">
-                        </div>
-                        <div class="card-conteudo">
-                            <h1 class="card-titulo"><a href="https://www.djangoproject.com/">Django</a></h1>
-                            <p class="card-texto">Django é um framework para desenvolvimento rápido para web.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-cabecalho quatro">
-                            <i class="fa-brands fa-css3"></i>
-                        </div>
-                        <div class="card-conteudo">
-                            <h1 class="card-titulo"><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a>
-                            </h1>
-                            <p class="card-texto"> Cascading Style Sheets é um mecanismo para adicionar estilos a uma
-                                página web
-                            </p>
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-cabecalho cinco">
-                            <i class="fa-brands fa-html5"></i>
-                        </div>
-                        <div class="card-conteudo">
-                            <h1 class="card-titulo"> <a id="card-info"
-                                    href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a></h1>
-                            <p class="card-texto">HTML é uma linguagem de marcação utilizada na construção de páginas na
-                                Web
-                            </p>
-                        </div>
+                    <div class="card-conteudo">
+                        <h1 class="card-titulo"><a target="_blank"
+                                href="https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-java-programming-language#:~:text=tudo%20%7C%20Recolher%20tudo-,O%20que%20%C3%A9%20o%20Java%3F,dos%20computadores%20e%20dispositivos%20m%C3%B3veis.">
+                                Java</a>
+                        </h1>
+                        <p class="card-texto">Java é uma linguagem multiplataforma, orientada a objetos.
+                        </p>
                     </div>
                 </div>
-            
+                <!-- PYTHON CARD -->
+                <div class="card">
+                    <div class="card-cabecalho dois">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div class="card-conteudo">
+                        <h1 class="card-titulo"><a id="card-info" href="https://www.python.org/">Python</a></h1>
+                        <p class="card-texto">Python é uma linguagem de programação com tipagem
+                            dinâmica.
+                        </p>
+                    </div>
+                </div>
+                <!-- DJANGO CARD -->
+                <div class="card">
+                    <div class="card-cabecalho tres">
+                        <img src="img/djangoimg.png" class="card-image">
+                    </div>
+                    <div class="card-conteudo">
+                        <h1 class="card-titulo"><a href="https://www.djangoproject.com/">Django</a></h1>
+                        <p class="card-texto">Django é um framework para desenvolvimento rápido para web.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-cabecalho quatro">
+                        <i class="fa-brands fa-css3"></i>
+                    </div>
+                    <div class="card-conteudo">
+                        <h1 class="card-titulo"><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a>
+                        </h1>
+                        <p class="card-texto"> Cascading Style Sheets é um mecanismo para adicionar estilos a uma
+                            página web
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-cabecalho cinco">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div class="card-conteudo">
+                        <h1 class="card-titulo"> <a id="card-info"
+                                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a></h1>
+                        <p class="card-texto">HTML é uma linguagem de marcação utilizada na construção de páginas na
+                            Web
+                        </p>
+                    </div>
+                </div>
             </div>
-        </section>
+
+        </div>
 
         <!-- Contato Div -->
         <div id="contato">
             <h2 class="titulo contato">CONTATO</h2>
             <span class="separador contato"></span>
-            <p class="subtitulo">Por favor, entre em contato por meio dos dados abaixo.
+            <p class="descricao contato">Por favor, entre em contato por meio dos dados abaixo.
             </p>
-            <div class="dados">
-                <p>teste</p>
-                <p>teste</p>
-            </div>
         </div>
-
 
     </main>
     <footer>
-        <p class="copyright">Copyright ©2024 Todos direitos reservados | Template </p>
+        <p class="copyright">Copyright ©2024 Todos direitos reservados | Template criado por eu</p>
     </footer>
 </body>
 

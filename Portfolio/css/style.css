@@ -1,67 +1,77 @@
 @import url(root.css);
 
+#contato {
+    background-color: var(--Beckers-Rock-roll);
+    padding-bottom: 1rem;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
+* {
+    padding: 0;
+}
+
 body {
-    background-color: var(--branco);
+    background: var(--backgroud);
+    background-color: var(--white);
     margin: 0;
 }
 
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* Serve para marcar uma seção génerica */
 section {
     width: 100%;
     height: 95vh;
     position: relative;
 }
 
-/* Nav - é uma tag que reprensenta uma seção que leva para outras páginas*/
-nav {
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 60px;
-    background-color: var(--branco);
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-    padding: 1rem 5rem;
-    text-transform: uppercase;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav ul li a {
-    font-size: 15px;
-    transition: color .3s;
-    margin: 25px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    color: var(--preto);
+    justify-content: space-between;
+    background: var(--Beckers-Rock-roll);
+    height: 4.6875rem;
+    padding: 1rem;
+    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.2);
     scroll-behavior: smooth;
 }
 
-nav ul li a:hover {
-    color: #f3bc5a;
-}
-
-nav ul li a.inicio {
-    color: #f3bc5a;
-}
-
-
 .logo {
-    color: var(--preto);
-    font-size: 30px;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    font-size: large;
+}
+
+.menu a {
+    font-family: "Poppins", sans-serif;
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: color .10s;
+}
+
+.menu.inicio {
+    color: var(--gold);
+}
+
+.menu a:hover {
+    color: var(--gold);
+}
+
+.label-menu,
+.checkbox {
+    display: none;
 }
 
 .apresentacao-texto {
@@ -70,7 +80,6 @@ nav ul li a.inicio {
     top: 40%;
     transform: translate(-13%, -42%);
 }
-
 
 .apresentacao-texto p:nth-child(1) {
     font-family: "Poppins", sans-serif;
@@ -83,7 +92,7 @@ nav ul li a.inicio {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
-    color: var(--preto);
+    color: var(--Beckers-Rock-roll);
     font-size: 60px;
     padding-top: -5px;
 }
@@ -97,10 +106,10 @@ nav ul li a.inicio {
 }
 
 .botao.github {
-    background-color: var(--branco);
-    color: var(--preto);
+    background-color: var(--white);
+    color: var(--Beckers-Rock-roll);
     font-family: "Poppins", sans-serif;
-    border: 1px solid var(--preto);
+    border: 1px solid var(--Beckers-Rock-roll);
     padding: 13px 52px;
     text-align: center;
     text-decoration: none;
@@ -112,15 +121,15 @@ nav ul li a.inicio {
 }
 
 .botao.github:hover {
-    background-color: var(--preto);
-    color: var(--branco);
+    background-color: var(--Beckers-Rock-roll);
+    color: var(--white);
 }
 
 .botao.info {
     font-family: "Poppins", sans-serif;
-    background-color: var(--preto);
-    color: var(--branco);
-    border: 1px solid var(--preto);
+    background-color: var(--Beckers-Rock-roll);
+    color: var(--white);
+    border: 1px solid var(--Beckers-Rock-roll);
     padding: 13px 52px;
     text-align: center;
     text-decoration: none;
@@ -132,8 +141,8 @@ nav ul li a.inicio {
 }
 
 .botao.info:hover {
-    background-color: var(--branco);
-    color: var(--preto);
+    background-color: var(--white);
+    color: var(--Beckers-Rock-roll);
 }
 
 .copy {
@@ -148,7 +157,7 @@ nav ul li a.inicio {
 .sobre {
     width: 80%;
     height: 330px;
-    background-color: var(--branco);
+    background-color: var(--white);
     border-radius: 20px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -191,9 +200,9 @@ nav ul li a.inicio {
 
 .btn-cv {
     font-family: "Poppins", sans-serif;
-    background-color: var(--preto);
-    color: var(--branco);
-    border: 1px solid var(--preto);
+    background-color: var(--Beckers-Rock-roll);
+    color: var(--white);
+    border: 1px solid var(--Beckers-Rock-roll);
     padding: 8px 20px;
     border-radius: 5px;
     text-align: center;
@@ -201,10 +210,6 @@ nav ul li a.inicio {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-}
-
-#contato {
-    background-color: var(--preto);
 }
 
 .titulo {
@@ -217,21 +222,34 @@ nav ul li a.inicio {
 
 .titulo.contato {
     padding-top: 10px;
-    color: var(--branco);
+    color: var(--white);
 }
 
-.subtitulo {
-    color: var(--branco);
+.descricao {
+    color: var(--Beckers-Rock-roll);
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: center;
     font-family: "Poppins", sans-serif;
 }
 
-.dados {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 5%;
+.descricao.contato {
+    color: var(--white);
+}
+
+.separador {
+    margin-top: -13px;
+    position: absolute;
+    height: 4px;
+    width: 3rem;
+    background: var(--Beckers-Rock-roll);
+    transform: translateX(-50%);
+    border-radius: 5px;
+    left: 50%;
+}
+
+.separador.contato {
+    background-color: var(--white);
 }
 
 footer {
@@ -240,49 +258,105 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--branco);
-}
-
-.separador {
-    position: absolute;
-    height: 5px;
-    width: 3rem;
-    background: var(--preto);
-    transform: translateX(-50%);
-    border-radius: 5px;
-    left: 50%;
-}
-
-.separador.contato {
-    background-color: var(--branco);
+    background-color: var(--white);
 }
 
 footer p {
     font-family: "Poppins", sans-serif;
-}
-
-footer p {
     font-size: 16px;
     color: #7e7d7d;
-    width: 500px;
     text-align: center;
+}
+
+@media only screen and (max-width: 390px) {
+    .botao.github {
+        padding: 1rem 2rem;
+    }
+
+    .botao.info {
+        padding: 1rem 2rem;
+    }
+
+    .sobre {
+        margin-top: 50px;
+    }
+
+    .sobre img {
+        width: 100px;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
 
-    nav ul {
-        flex-direction: column;
-        letter-spacing: 1px;
+    .menu {
+        display: block;
+        position: absolute;
+        left: 0;
+        background: var(--gray);
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 0;
+    }
+
+    .label-menu {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--white);
+        padding: 1rem 0;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.30rem;
+    }
+
+    .hamburger::after,
+    .hamburger::before {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.130rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .checkbox:checked~.menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .checkbox:checked~.label-menu .hamburger {
+        border-top-color: transparent;
+    }
+
+    .checkbox:checked~.label-menu .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .checkbox:checked~.label-menu .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
     }
 
     .sobre {
         padding: 0px 5px 70px 5px;
-        zoom: 100%;
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        justify-content: center;
         flex-direction: column;
         margin-bottom: 80px;
     }
@@ -300,10 +374,6 @@ footer p {
         padding: 3px 5px;
         border-radius: 5px;
 
-    }
-
-    footer {
-        display: none;
     }
 
 }
