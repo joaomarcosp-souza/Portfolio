@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/cards.css">
+    <link rel="stylesheet" type="text/css" href="css/card.css">
     <link rel="shortcut icon" type="imagex/png" href="img/fotinha.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -30,111 +30,115 @@
     <main>
         <!-- Sobre Min/Inicio -->
         <section>
-            <div class="apresentacao-texto">
+            <div class="apresentacao texto">
                 <p>Bem Vindos</p>
                 <p>Eu sou João Marcos</p>
                 <p>Cursando engenharia de software</p>
-                <a href="https://github.com/joaomarcosp-souza"><button class="botao github">Github</button></a>
-                <a href=""><button class="botao info">Mais Infos.</button></a>
+                <a href="https://github.com/joaomarcosp-souza"><button class="btn github">Github</button></a>
+                <a href=""><button class="btn info">Mais Infos.</button></a>
             </div>
         </section>
 
         <div id="sobre-min" class="sobre">
-            <img src="img/eu.jpg">
-            <div class="texto-sobre">
-                <p><strong>Sobre Min</strong></p>
-                <p>Olá, sou João Marcos, fã de filmes e louco por jogos.</p>
-                <p>
-                    Na atualidade não trabalho na área, estou cursando 3° Ano de Engenharia de Software no Instituto
-                    Federal de Educação, Ciência e Tecnologia do
-                    Paraná - Campus Paranavaí. <br> Com previsão de término para 2025.
-                </p>
-                <button class="btn-cv"> Download CV</button>
+            <div class="sobre-coluna">
+                <div class="texto-sobre">
+                    <div>
+                        <img src="img/eu.jpg">
+                        <a class="btn cv"> Download CV</a>
+                    </div>
+
+                    <p><strong>Sobre Min</strong></p>
+                    <p>Olá, sou João Marcos, fã de filmes e louco por jogos.</p>
+                    <p>
+                        Na atualidade não trabalho na área, estou cursando 3° Ano de Engenharia de Software no Instituto
+                        Federal de Educação, Ciência e Tecnologia do
+                        Paraná - Campus Paranavaí. <br> Com previsão de término para 2025.
+                    </p>
+                </div>
+                <div>
+                    <p>teste</p>
+                </div>
             </div>
         </div>
 
         <!-- Projetos Seção -->
         <div id="projetos">
-            <h2 class="titulo">PROJETOS</h2>
-            <span class="separador"></span>
-            <p class="descricao">Projetos feitos para faculdade ou de utilização pessoal.
-            </p>
-            <div id="projetos-conteudo">
-                <!-- JAVA CARD -->
-                <div class="card">
-                    <div class="card-cabecalho um">
-                        <i class="fa-brands fa-java"></i>
-                    </div>
-                    <div class="card-conteudo">
-                        <h1 class="card-titulo"><a target="_blank"
-                                href="https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-java-programming-language#:~:text=tudo%20%7C%20Recolher%20tudo-,O%20que%20%C3%A9%20o%20Java%3F,dos%20computadores%20e%20dispositivos%20m%C3%B3veis.">
-                                Java</a>
-                        </h1>
-                        <p class="card-texto">Java é uma linguagem multiplataforma, orientada a objetos.
-                        </p>
-                    </div>
-                </div>
-                <!-- PYTHON CARD -->
-                <div class="card">
-                    <div class="card-cabecalho dois">
-                        <i class="fa-brands fa-python"></i>
-                    </div>
-                    <div class="card-conteudo">
-                        <h1 class="card-titulo"><a id="card-info" href="https://www.python.org/">Python</a></h1>
-                        <p class="card-texto">Python é uma linguagem de programação com tipagem
-                            dinâmica.
-                        </p>
-                    </div>
-                </div>
-                <!-- DJANGO CARD -->
-                <div class="card">
-                    <div class="card-cabecalho tres">
-                        <img src="img/djangoimg.png" class="card-image">
-                    </div>
-                    <div class="card-conteudo">
-                        <h1 class="card-titulo"><a href="https://www.djangoproject.com/">Django</a></h1>
-                        <p class="card-texto">Django é um framework para desenvolvimento rápido para web.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-cabecalho quatro">
-                        <i class="fa-brands fa-css3"></i>
-                    </div>
-                    <div class="card-conteudo">
-                        <h1 class="card-titulo"><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a>
-                        </h1>
-                        <p class="card-texto"> Cascading Style Sheets é um mecanismo para adicionar estilos a uma
-                            página web
-                        </p>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-cabecalho cinco">
-                        <i class="fa-brands fa-html5"></i>
-                    </div>
-                    <div class="card-conteudo">
-                        <h1 class="card-titulo"> <a id="card-info"
-                                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a></h1>
-                        <p class="card-texto">HTML é uma linguagem de marcação utilizada na construção de páginas na
-                            Web
-                        </p>
-                    </div>
-                </div>
+            <div class="titulo">
+                <h2>PROJETOS</h2>
+                <span class="separador"></span>
+                <p class="descricao">Projetos feitos para faculdade ou de utilização pessoal.</p>
             </div>
+            <div class="projetos conteudo">
+                <!-- CARDS -->
+                <div class="card">
+                    <div class="content">
+                        <div class="info">
+                            <h5>Star Wars: Invader</h5>
+                            <p>Este projeto é uma implementação do clássico jogo Space Invaders, criado em Java como parte do aprendizado de Programação Orientada a Objetos. </p>
+                        </div>
+                        <div class="tags-e-banner">
+                            <div class="tags">
+                                <div class="sc-ipEyDJ jsarUM">Java</div>
+                                <div class="sc-ipEyDJ jsarUM">Postgres</div>
+                                <div class="sc-ipEyDJ jsarUM">Git</div>
+                            </div>
+                            <img src="img/starwarsinvaders.png" 1alt=""><a href="https://github.com/joaomarcosp-souza/Jogo-POO"></a></img>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card">
+                    <div class="content">
+                        <div class="info">
+                            <h5>Carde 02</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="tags-e-banner">
+                            <div class="tags">
+                                <div class="sc-ipEyDJ jsarUM">Node.js</div>
+                                <div class="sc-ipEyDJ jsarUM">Prisma</div>
+                                <div class="sc-ipEyDJ jsarUM">Next.js</div>
+                                <div class="sc-ipEyDJ jsarUM">React.js</div>
+                                <div class="sc-ipEyDJ jsarUM">Typescript</div>
+                            </div>
+                            <img src="https://s3-alpha.figma.com/hub/file/3650468509/38fd4283-8459-4fa9-8b5b-b057a26f9edc-cover.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <div class="info">
+                            <h5>Carde 03</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="tags-e-banner">
+                            <div class="tags">
+                                <div class="sc-ipEyDJ jsarUM">Node.js</div>
+                                <div class="sc-ipEyDJ jsarUM">Prisma</div>
+                                <div class="sc-ipEyDJ jsarUM">Next.js</div>
+                                <div class="sc-ipEyDJ jsarUM">React.js</div>
+                                <div class="sc-ipEyDJ jsarUM">Typescript</div>
+                            </div>
+                            <img src="img/fotinha.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
         <!-- Contato Div -->
         <div id="contato">
-            <h2 class="titulo contato">CONTATO</h2>
-            <span class="separador contato"></span>
-            <p class="descricao contato">Por favor, entre em contato por meio dos dados abaixo.
-            </p>
+            <div class="titulo">
+                <h2>CONTATO</h2>
+                <span class="separador"></span>
+                <p class="descricao">Por favor, entre em contato por meio dos dados abaixo.</p>
+            </div>
         </div>
 
     </main>
+    
     <footer>
         <p class="copyright">Copyright ©2024 Todos direitos reservados | Template criado por eu</p>
     </footer>

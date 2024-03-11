@@ -1,0 +1,134 @@
+#projetos {
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+
+.projetos.conteudo {
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-pack: center;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.card .content {
+  display: flex;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px;
+  height: 100%;
+}
+
+.hEkrtz {
+  display: flex;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 48px;
+  gap: 48px;
+  padding-bottom: 24px;
+}
+
+.card {
+  transition: all 0.4s ease-in-out 0s;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 320px;
+  height: 460px;
+  border: 1px solid var(--gold);
+  border-radius: 16px;
+}
+
+.card:hover {
+  background-color: rgba(255, 215, 0, 0.1);
+  transition: background-color 0.6s ease-in-out;
+}
+
+.card .content .info h5 {
+  margin: 0px 0px 8px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.card .content .info p {
+  margin: 0px 0px 16px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.card .content .tags-e-banner .tags {
+  display: flex;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-bottom: 24px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.jsarUM {
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 5px 8px;
+  width: fit-content;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--gold);
+  background: rgba(123, 74, 226, 0.1);
+}
+
+.card .content .tags-e-banner img {
+  width: 265px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 770px) {
+  .projetos.conteudo {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 16px;
+    padding-right: 64px;
+    padding-left: 20px;
+    margin-bottom: 24px;
+  }
+}

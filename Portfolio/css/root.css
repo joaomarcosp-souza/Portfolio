@@ -1,7 +1,8 @@
 :root {
     --Beckers-Rock-roll: #191919;
     --white: #fff;
-    --backgroud: #e2e3e9;
+    --backgroud: #0C0F17;
     --gray: gray;
-    --gold: #f3bc5a;
+    --gold: rgba(243, 188, 90, 0.8);
+    --roxo: rgb(123, 74, 226)
 }
