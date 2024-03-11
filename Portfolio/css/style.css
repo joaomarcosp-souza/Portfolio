@@ -77,129 +77,90 @@ a {
 .apresentacao.texto p:nth-child(1) {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  font-size: 18px;
-  color: #505050;
+  font-size: 15px;
+  color: var(--gold);
 }
 
 .apresentacao.texto p:nth-child(2) {
+  margin: 24px 0px;
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: var(--Beckers-Rock-roll);
-  font-size: 60px;
-  padding-top: -5px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 61px;
+  color: var(--white);
 }
 
 .apresentacao.texto p:nth-child(3) {
   font-family: "Poppins", sans-serif;
-  color: #403e3e;
-  font-size: 28px;
+  color: rgb(232, 230, 227);
+  font-size: 25px;
   line-height: 30px;
-  margin-top: -10px;
+  opacity: 0.5;
 }
 
-.btn.github {
-  background-color: var(--white);
-  color: var(--Beckers-Rock-roll);
-  font-family: "Poppins", sans-serif;
-  border: 1px solid var(--Beckers-Rock-roll);
-  padding: 13px 52px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 50px;
-  transition: 0.5s ease-out background-color, 0.2s linear color;
-}
-
-.btn.github:hover {
-  background-color: var(--Beckers-Rock-roll);
-  color: var(--white);
-}
-
-.btn.info {
-  font-family: "Poppins", sans-serif;
-  background-color: var(--Beckers-Rock-roll);
-  color: var(--white);
-  border: 1px solid var(--Beckers-Rock-roll);
-  padding: 13px 52px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 50px;
-  transition: 0.5s ease-out background-color, 0.2s linear color;
-}
-
-.btn.info:hover {
-  background-color: var(--white);
-  color: var(--Beckers-Rock-roll);
-}
-
-.copyrigth {
-  color: #565555;
-  font-size: 13px;
-  position: absolute;
-  left: 50%;
-  bottom: 10px;
-  transform: translateX(-50%);
-}
-
-.sobre-min {
+.social {
   display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
+  margin-top: 5px;
+  gap: 16px;
+  font-size: 1.5rem;
+}
+
+.skills {
+  display: flex;
   justify-content: center;
-  flex-direction: column;
-  margin: 110px 0px;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 800;
+  line-height: 56px;
+  color: var(--white);
+}
+
+.perfil {
+  display: flex;
+  margin: 100px 0px;
   padding: 80px 0px;
+  position: relative;
+  justify-content: space-evenly;
   border-top: 1px solid rgba(243, 187, 90, 0.3);
   border-bottom: 1px solid rgba(243, 187, 90, 0.3);
 }
 
-.sobre-min img {
-  height: 200px;
+.perfil img {
+  height: 150px;
   border-radius: 15px;
+  margin-bottom: 15px;
 }
 
-.texto-sobre {
-  width: 550px;
+.descricao {
+  width: 500px;
 }
 
-.texto-sobre p:nth-child(1) {
-  color: #fff;
+.descricao p:nth-child(1),
+.descricao p:nth-child(2) {
+  color: var(--gold);
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 15px;
   line-height: 0px;
 }
 
-.texto-sobre p:nth-child(2) {
-  color: #fff;
-  font-size: 13px;
+.descricao p:nth-child(3) {
+  color: var(--white);
+  font-size: 17px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
 
-.texto-sobre p:nth-child(3) {
+.descricao p:nth-child(4) {
   color: #7e7d7d;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
+  opacity: 0.8;
 }
 
-.btn.cv {
-  font-family: "Poppins", sans-serif;
-  color: var(--white);
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  margin-left: 8px;
-}
 
 .titulo h2 {
   display: flex;
@@ -212,22 +173,26 @@ a {
   color: var(--white);
 }
 
+#contato {
+  margin: 80px 0px;
+}
+
 .titulo.contato {
   padding-top: 10px;
   color: var(--white);
 }
 
-.descricao {
+.subtitulo {
   margin-top: 30px;
   color: var(--Beckers-Rock-roll);
   display: flex;
   text-align: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  color: #565555;
+  color: #7e7d7d;
 }
 
-.descricao.contato {
+.subtitulo.contato {
   color: var(--white);
 }
 
@@ -249,6 +214,41 @@ a {
   justify-content: space-between;
 }
 
+.copyrigth {
+  color: #565555;
+  font-size: 13px;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+
+.contato.conteudo {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 50px 0px;
+  gap: 40px;
+}
+
+.contato.conteudo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 10px 16px;
+  border: 1.1px solid var(--gold);
+  border-radius: 16px;
+}
+
+.contato.conteudo a:hover {
+  transition: all 0.50s ease-in 0s;
+  border-color: rgba(243, 187, 90, 0.2);
+  background-color: rgba(243, 187, 90, 0.2);
+}
+
 
 footer {
   width: 100%;
@@ -256,6 +256,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid rgba(243, 187, 90, 0.3);
+  padding: 20px 0px 20px 0px;
 }
 
 footer p {
@@ -274,7 +276,7 @@ footer p {
     padding: 1rem 2rem;
   }
 
-  .sobre-min {
+  .perfil {
     margin-top: 50px;
   }
 }
@@ -310,13 +312,13 @@ footer p {
     cursor: pointer;
   }
 
-  .hamburger {
+  .icone {
     border-top: 0.125rem solid;
     width: 1.3rem;
   }
 
-  .hamburger::after,
-  .hamburger::before {
+  .icone::after,
+  .icone::before {
     content: " ";
     display: block;
     width: 1.25rem;
@@ -327,26 +329,26 @@ footer p {
     transition: 0.3s;
   }
 
-  .checkbox:checked ~ .menu {
+  .checkbox:checked~.menu {
     height: calc(100vh - 4.6875rem);
     visibility: visible;
     overflow-y: auto;
   }
 
-  .checkbox:checked ~ .label-menu .hamburger {
+  .checkbox:checked~.label-menu .icone {
     border-top-color: transparent;
   }
 
-  .checkbox:checked ~ .label-menu .hamburger::before {
+  .checkbox:checked~.label-menu .icone::before {
     transform: rotate(135deg);
   }
 
-  .checkbox:checked ~ .label-menu .hamburger::after {
+  .checkbox:checked~.label-menu .icone::after {
     transform: rotate(-135deg);
     top: -0.4375rem;
   }
 
-  .sobre-min {
+  .eu {
     padding: 30px 5px 30px 5px;
     flex-direction: column;
     margin-bottom: 80px;
@@ -356,24 +358,17 @@ footer p {
     width: 250px;
   }
 
-  .sobre-min img{
+  .perfil img {
     height: 150px;
     margin-bottom: 15px;
   }
 
-  .perfil{
+  .perfil {
     text-align: center;
   }
 
-  .sobre-coluna{
+  .sobre-coluna {
     grid-template-columns: 1fr;
     grid-gap: 0;
   }
-}
-
-@media only screen and (max-width: 900px) {
-  .sobre-min {
-   padding-left: 30px;
-  }
-
 }
