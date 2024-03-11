@@ -147,7 +147,7 @@ a {
   transform: translateX(-50%);
 }
 
-.sobre {
+.sobre-min {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -160,7 +160,7 @@ a {
   border-bottom: 1px solid rgba(243, 187, 90, 0.3);
 }
 
-.sobre img {
+.sobre-min img {
   height: 200px;
   border-radius: 15px;
 }
@@ -245,8 +245,10 @@ a {
 .sobre-coluna {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10rem;
+  grid-gap: 15rem;
+  justify-content: space-between;
 }
+
 
 footer {
   width: 100%;
@@ -272,12 +274,12 @@ footer p {
     padding: 1rem 2rem;
   }
 
-  .sobre {
+  .sobre-min {
     margin-top: 50px;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 770px) {
   .menu {
     display: block;
     position: absolute;
@@ -344,8 +346,8 @@ footer p {
     top: -0.4375rem;
   }
 
-  .sobre {
-    padding: 0px 5px 70px 5px;
+  .sobre-min {
+    padding: 30px 5px 30px 5px;
     flex-direction: column;
     margin-bottom: 80px;
   }
@@ -354,8 +356,24 @@ footer p {
     width: 250px;
   }
 
-  .btn-cv {
-    padding: 3px 5px;
-    border-radius: 5px;
+  .sobre-min img{
+    height: 150px;
+    margin-bottom: 15px;
   }
+
+  .perfil{
+    text-align: center;
+  }
+
+  .sobre-coluna{
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sobre-min {
+   padding-left: 30px;
+  }
+
 }
