@@ -33,7 +33,7 @@
   flex-direction: column;
   width: 320px;
   height: 460px;
-  border: 1px solid var(--gold);
+  border: 1px solid var(--text-gold);
   border-radius: 16px;
 }
 
@@ -48,7 +48,6 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  color: var(--white);
 }
 
 .card .content .info p {
@@ -97,7 +96,7 @@ p {
   align-items: center;
   text-align: center;
   white-space: nowrap;
-  color: var(--gold);
+  color: var(--text-color-gold, var(--text-gold));
   background: rgba(123, 74, 226, 0.1);
 }
 

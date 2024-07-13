@@ -1,8 +1,10 @@
 :root {
     --Beckers-Rock-roll: #191919;
-    --white: #fff;
-    --backgroud: #0C0F17;
     --gray: gray;
-    --gold: rgba(243, 188, 90, 0.8);
-    --roxo: rgb(123, 74, 226)
+    --text-gold: rgba(243, 188, 90, 0.8);
+    --text-gold-light: rgba(250, 160, 5, 0.5);
+    --theme-light: #f8f8f8;
+    --theme-dark: #0C0F17;
+    --text-color-light: #fff;
+    --text-color-dark: #0C0F17;
 }
