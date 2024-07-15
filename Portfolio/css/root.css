@@ -1,10 +1,10 @@
 :root {
-    --Beckers-Rock-roll: #191919;
-    --gray: gray;
-    --text-gold: rgba(243, 188, 90, 0.8);
-    --text-gold-light: rgba(250, 160, 5, 0.5);
-    --theme-light: #f8f8f8;
-    --theme-dark: #0C0F17;
-    --text-color-light: #fff;
-    --text-color-dark: #0C0F17;
+  --Beckers-Rock-roll: #191919;
+  --gray: gray;
+  --text-gold: rgba(243, 188, 90, 0.8);
+  --text-gold-light: rgba(250, 160, 5, 0.5);
+  --theme-light: #f8f8f8;
+  --theme-dark: #0c0f17;
+  --text-color-light: #fff;
+  --text-color-dark: #0c0f17;
 }
