@@ -119,3 +119,12 @@ p {
     margin-bottom: 24px;
   }
 }
+
+.gitRepositorio {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding: 20px;
+}
+
