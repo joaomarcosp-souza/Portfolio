@@ -2,7 +2,7 @@ const repositories = document.querySelector(".principal");
 
 function getApi() {
   const headers = {
-    Authorization: "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",
+    Authorization: "token ghp_7Z3",
   };
 
   fetch("https://api.github.com/users/joaomarcosp-souza/repos", { headers })
