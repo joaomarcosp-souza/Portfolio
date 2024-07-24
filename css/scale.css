@@ -21,7 +21,7 @@
         display: block;
         position: absolute;
         left: 0;
-        background: var(--gray);
+        background: var(--theme-dark);
         text-align: center;
         width: 100%;
         height: 0;
@@ -107,13 +107,17 @@
     .projetos.conteudo {
         -webkit-box-pack: start;
         justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
         gap: 16px;
-        padding-right: 64px;
         padding-left: 20px;
         margin-bottom: 24px;
     }
+
+    .botao-tema {
+        position: absolute;
+        right: 80px;
+        top: 2rem;
+    }
+
 }
 
 @media only screen and (max-width: 1300px) {

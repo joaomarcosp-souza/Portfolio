@@ -8,16 +8,19 @@ html {
   padding: 0;
 }
 
+:focus {
+  outline: solid red;
+}
+
 body {
   background-color: var(--background-body, var(--theme-dark));
   margin: 0;
   color: var(--text-color, var(--text-color-light));
 }
 
-#menu-Inicial {
+#apresentacao-perfil {
   width: 100%;
   height: 95vh;
-  position: relative;
 }
 
 .principal {
@@ -30,13 +33,17 @@ a {
 }
 
 .header {
+  top: 0;
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 4.6875rem;
   padding: 1rem;
   box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: var(--background-body, var(--theme-dark));
   scroll-behavior: smooth;
+  z-index: 1;
 }
 
 .logo {
@@ -76,7 +83,7 @@ a {
   transition: color 0.1s;
 }
 
-.menu.inicio {
+.menu li:nth-child(1) a {
   color: var(--text-color-gold, var(--text-gold));
 }
 
@@ -222,10 +229,6 @@ a {
   font-family: "Poppins", sans-serif;
   color: #7e7d7d;
 }
-
-/* .subtitulo.contato {
-  color: var(--text-color-light);
-} */
 
 .separador {
   margin-top: -13px;
