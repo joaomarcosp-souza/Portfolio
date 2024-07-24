@@ -1,203 +1,202 @@
-<DOCTYPE html>
-  <html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 
-  <head>
-    <title>Portfolio</title>
-    <meta charset="UTF-8" name="descricao" content="Página para um Portfolio" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/scale.css" />
-    <link rel="stylesheet" type="text/css" href="css/card.css" />
-    <link rel="shortcut icon" type="image/jpg" href="img/logo.jpg" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  </head>
+<head>
+  <title>Portfolio</title>
+  <meta charset="UTF-8" name="descricao" content="Página para um Portfolio" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/scale.css" />
+  <link rel="stylesheet" type="text/css" href="css/card.css" />
+  <link rel="shortcut icon" type="image/jpg" href="img/logo.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
 
-  <body data-theme="dark">
-    <header class="header">
-      <span class="logo fa-solid fa-jedi"></span>
-      <nav role="navigation">
-        <input type="checkbox" id="checkbox" class="checkbox" />
-        <label for="checkbox" class="label-menu"><span class="icone"></span></label>
-        <ul class="menu" id="menu" role="menu">
-          <li tabindex="1" role="menuitem"><a href="#apresentacao-perfil" aria-label="Menu link para inicio">Início</a>
-          </li>
-          <li tabindex="2" role="menuitem"><a href="#projetos" aria-label="Menu link para projetos">Projetos</a></li>
-          <li tabindex="3" role="menuitem"><a href="#contato" aria-label="Menu link para contato">Contato</a></li>
-          <li tabindex="4" role="menuitem"><a href="#tecnologias"
-              aria-label="Menu link para tecnologias">Tecnologias</a>
-          </li>
-        </ul>
-        <button class="botao-tema" onclick="alterarTema()" aria-label="Trocar tema do site"><i
-            class="fas fa-moon"></i></button>
-      </nav>
-    </header>
+<body data-theme="dark">
+  <header class="header">
+    <span class="logo fa-solid fa-jedi"></span>
+    <nav role="navigation">
+      <input type="checkbox" id="checkbox" class="checkbox" />
+      <label for="checkbox" class="label-menu"><span class="icone"></span></label>
+      <ul class="menu" id="menu" role="menu">
+        <li role="menuitem"><a href="#apresentacao-perfil" aria-label="Menu link para inicio">Início</a>
+        </li>
+        <li role="menuitem"><a href="#projetos" aria-label="Menu link para projetos">Projetos</a></li>
+        <li role="menuitem"><a href="#contato" aria-label="Menu link para contato">Contato</a></li>
+        <li role="menuitem"><a href="#tecnologias" aria-label="Menu link para tecnologias">Tecnologias</a>
+        </li>
+      </ul>
+      <button tabindex="-1" class="botao-tema" onclick="alterarTema()" aria-label="Trocar tema do site"><i
+          class="fas fa-moon"></i></button>
+    </nav>
+  </header>
 
 
-    <main>
-      <!-- Sobre Min/Inicio -->
-      <section id="apresentacao-perfil">
-        <div class="apresentacao texto">
-          <p>Saudações!</p>
-          <p>João Marcos</p>
-          <p>Cursando engenharia de software, 3º Ano.</p>
-          <div class="apresentacao.texto">
-            <a tabindex="5" href="https://github.com/joaomarcosp-souza" class="social fa-brands fa-github"
-              aria-label="Link para o meu gitgub" target="_blank"></a>
-            <a tabindex="6" href="https://www.linkedin.com/in/jo%C3%A3o-marcos-715b65185/"
-              class="social fa-brands fa-linkedin" aria-label="Veja meu perfil no LinkedIn" target="_blank"></a>
-            <a tabindex="7" href="https://letterboxd.com/VasheS/" class="social fa-brands fa-square-letterboxd"
-              aria-label="Link para letterboxd com os meus filmes favoritos" target="_blank"></a>
-          </div>
+  <main>
+    <!-- Sobre Min/Inicio -->
+    <section id="apresentacao-perfil">
+      <div class="apresentacao texto">
+        <p>Saudações!</p>
+        <p>João Marcos</p>
+        <p>Cursando engenharia de software, 3º Ano.</p>
+        <div class="apresentacao.texto">
+          <a tabindex="0" href="https://github.com/joaomarcosp-souza" class="social fa-brands fa-github"
+            aria-label="Link para o meu gitgub" target="_blank"></a>
+          <a tabindex="0" href="https://www.linkedin.com/in/jo%C3%A3o-marcos-715b65185/"
+            class="social fa-brands fa-linkedin" aria-label="Veja meu perfil no LinkedIn" target="_blank"></a>
+          <a tabindex="0" href="https://letterboxd.com/VasheS/" class="social fa-brands fa-square-letterboxd"
+            aria-label="Link para letterboxd com os meus filmes favoritos" target="_blank"></a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="sobre-min" class="perfil">
-        <div class="sobre-coluna">
-          <div tabindex="8" class="descricao">
-            <img src="img/eu.jpg" alt="Uma foto minha" />
-            <p><strong>Sobre Min</strong></p>
-            <p>
-              Olá, me chamo João Marcos P. de Souza, sou um apaixonado por jogos e
-              filmes.
-            </p>
-            <p>
-              Na atualidade não trabalho na área, estou cursando 3° Ano de
-              Engenharia de Software no Instituto Federal de Educação, Ciência e
-              Tecnologia do Paraná - Campus Paranavaí. <br />
-              Com previsão de término para 2025.
-            </p>
-          </div>
-          <div tabindex="9" id="tecnologias" class="skills">
-            <h5>TECNOLOGIAS</h5>
-            <div>
-              <div class="skills teste">
-                <div class="tecnologias-tag">Python</div>
-                <div class="tecnologias-tag">React</div>
-                <div class="tecnologias-tag">Java</div>
-                <div class="tecnologias-tag">Typescript</div>
-                <div class="tecnologias-tag">Django</div>
-                <div class="tecnologias-tag">JavaScript</div>
-                <div class="tecnologias-tag">Postgres</div>
-                <div class="tecnologias-tag">Bootstrap</div>
-                <div class="tecnologias-tag">CSS</div>
-                <div class="tecnologias-tag">HMTL</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projetos Seção -->
-      <section id="projetos">
-        <div class="titulo">
-          <h2>PROJETOS</h2>
-          <span class="separador"></span>
-          <p class="subtitulo">Principais projetos para faculdade.</p>
-        </div>
-
-        <div class="projetos conteudo">
-          <!-- CARDS -->
-          <div class="card">
-            <div class="content">
-              <div class="info">
-                <h5>Star Wars: Invader</h5>
-                <p>
-                  Este projeto é uma implementação do clássico jogo Space
-                  Invaders, criado em Java como parte do aprendizado de
-                  Programação Orientada a Objetos.
-                </p>
-              </div>
-              <div class="tags-e-banner">
-                <div class="tags">
-                  <div class="tecnologias-tag">Java</div>
-                  <div class="tecnologias-tag">Postgres</div>
-                  <div class="tecnologias-tag">Git</div>
-                </div>
-                <a tabindex="10" target="_blank" href="https://github.com/joaomarcosp-souza/Jogo-POO"><img
-                    src="img/starwarsinvaders.png" alt="Imagem do jogo space Invaders"
-                    aria-label="Link para o repositorio do projeto - Space Invaders jogo" /></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="content">
-              <div class="info">
-                <h5>Gfarm - Gestão de Fazendas</h5>
-                <p>
-                  Trabalho final de curso. Sistema de gestão pecuária, pessoal,
-                  campo, controle de estoque rural, histórico de medicamentos.
-                </p>
-              </div>
-              <div class="tags-e-banner">
-                <div class="tags">
-                  <div class="tecnologias-tag">Python</div>
-                  <div class="tecnologias-tag">Django</div>
-                  <div class="tecnologias-tag">JavaScript</div>
-                  <div class="tecnologias-tag">Bootstrap</div>
-                </div>
-                <a tabindex="11" target="_blank" href="https://github.com/joaomarcosp-souza/Tcc"><img
-                    src="img/TelaSite.png" alt="Imagem do site Gfarm, sistema de gestão de fazendas"
-                    aria-label="Link para o repositorio do projeto - Trabalho de Conclusão de Curso, Gfarm" /></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="content">
-              <div class="info">
-                <h5>Calculadora Planetaria</h5>
-                <p>
-                  Aplicativo para calcular o quanto você pesa em outros planetas.
-                </p>
-              </div>
-              <div class="tags-e-banner">
-                <div class="tags">
-                  <div class="tecnologias-tag">JavaScript</div>
-                  <div class="tecnologias-tag">Ruby</div>
-                  <div class="tecnologias-tag">Java</div>
-                  <div class="tecnologias-tag">Obective-C</div>
-                  <div class="tecnologias-tag">React</div>
-                </div>
-                <a tabindex="12" target="_blank" href="https://github.com/joaomarcosp-souza/Calculadora_Planetaria"><img
-                    src="img/conjunto-de-planetas.avif" alt="Imagem de um aplicativo de calculadora planetaria"
-                    aria-label="Link para o repositorio do projeto - Calculadora Planetaria" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="todosProjetos">
-          <a tabindex="13" href="listaRepositorios.html" class="todosProjetos botao"
-            aria-label="Veja todos os meus projetos do Git">Listar todos</a>
-        </div>
-      </section>
-
-      <!-- Contato Div -->
-      <section id="contato">
-        <div class="titulo">
-          <h2>CONTATO</h2>
-          <span class="separador"></span>
-          <p class="subtitulo">
-            Por favor, entre em contato por meio dos seguintes modos.
+    <section id="sobre-min" class="perfil">
+      <div class="sobre-coluna">
+        <div tabindex="0" class="descricao">
+          <img src="img/eu.jpg" alt="Uma foto minha" />
+          <p><strong>Sobre Min</strong></p>
+          <p>
+            Olá, me chamo João Marcos P. de Souza, sou um apaixonado por jogos e
+            filmes.
+          </p>
+          <p>
+            Na atualidade não trabalho na área, estou cursando 3° Ano de
+            Engenharia de Software no Instituto Federal de Educação, Ciência e
+            Tecnologia do Paraná - Campus Paranavaí. <br />
+            Com previsão de término para 2025.
           </p>
         </div>
-        <div class="contato conteudo">
-          <a tabindex="14" target="_blank"
-            href="https://api.whatsapp.com/send?phone=5545456456465&text=Ol%C3%A1%2C%20vi%20o%20seu%20portf%C3%B3lio"
-            aria-label="Link para o whatsapp">whatsapp</a>
-          <a tabindex="15" href="mailto:joaomarcosp.sza@gmail.com.br"
-            aria-label="Link para enviar me enviar um email">E-mail</a>
+        <div tabindex="0" id="tecnologias" class="skills">
+          <h5>TECNOLOGIAS</h5>
+          <div>
+            <div class="skills teste">
+              <div class="tecnologias-tag">Python</div>
+              <div class="tecnologias-tag">React</div>
+              <div class="tecnologias-tag">Java</div>
+              <div class="tecnologias-tag">Typescript</div>
+              <div class="tecnologias-tag">Django</div>
+              <div class="tecnologias-tag">JavaScript</div>
+              <div class="tecnologias-tag">Postgres</div>
+              <div class="tecnologias-tag">Bootstrap</div>
+              <div class="tecnologias-tag">CSS</div>
+              <div class="tecnologias-tag">HMTL</div>
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer>
-      <p tabindex="16" class="copyright">
-        © 2024 João Marcos P. de Souza. Todos os direitos reservados.
-      </p>
-    </footer>
-    <script src="js/index.js"></script>
+    <!-- Projetos Seção -->
+    <section id="projetos">
+      <div class="titulo">
+        <h2>PROJETOS</h2>
+        <span class="separador"></span>
+        <p class="subtitulo">Principais projetos para faculdade.</p>
+      </div>
 
-  </body>
+      <div class="projetos conteudo">
+        <!-- CARDS -->
+        <div class="card">
+          <div class="content">
+            <div class="info">
+              <h5>Star Wars: Invader</h5>
+              <p>
+                Este projeto é uma implementação do clássico jogo Space
+                Invaders, criado em Java como parte do aprendizado de
+                Programação Orientada a Objetos.
+              </p>
+            </div>
+            <div class="tags-e-banner">
+              <div class="tags">
+                <div class="tecnologias-tag">Java</div>
+                <div class="tecnologias-tag">Postgres</div>
+                <div class="tecnologias-tag">Git</div>
+              </div>
+              <a tabindex="0" target="_blank" href="https://github.com/joaomarcosp-souza/Jogo-POO"><img
+                  src="img/starwarsinvaders.png" alt="Imagem do jogo space Invaders"
+                  aria-label="Link para o repositorio do projeto - Space Invaders jogo" /></a>
+            </div>
+          </div>
+        </div>
 
-  </html>
+        <div class="card">
+          <div class="content">
+            <div class="info">
+              <h5>Gfarm - Gestão de Fazendas</h5>
+              <p>
+                Trabalho final de curso. Sistema de gestão pecuária, pessoal,
+                campo, controle de estoque rural, histórico de medicamentos.
+              </p>
+            </div>
+            <div class="tags-e-banner">
+              <div class="tags">
+                <div class="tecnologias-tag">Python</div>
+                <div class="tecnologias-tag">Django</div>
+                <div class="tecnologias-tag">JavaScript</div>
+                <div class="tecnologias-tag">Bootstrap</div>
+              </div>
+              <a tabindex="0" target="_blank" href="https://github.com/joaomarcosp-souza/Tcc"><img
+                  src="img/TelaSite.png" alt="Imagem do site Gfarm, sistema de gestão de fazendas"
+                  aria-label="Link para o repositorio do projeto - Trabalho de Conclusão de Curso, Gfarm" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="content">
+            <div class="info">
+              <h5>Calculadora Planetaria</h5>
+              <p>
+                Aplicativo para calcular o quanto você pesa em outros planetas.
+              </p>
+            </div>
+            <div class="tags-e-banner">
+              <div class="tags">
+                <div class="tecnologias-tag">JavaScript</div>
+                <div class="tecnologias-tag">Ruby</div>
+                <div class="tecnologias-tag">Java</div>
+                <div class="tecnologias-tag">Obective-C</div>
+                <div class="tecnologias-tag">React</div>
+              </div>
+              <a tabindex="0" target="_blank" href="https://github.com/joaomarcosp-souza/Calculadora_Planetaria"><img
+                  src="img/conjunto-de-planetas.avif" alt="Imagem de um aplicativo de calculadora planetaria"
+                  aria-label="Link para o repositorio do projeto - Calculadora Planetaria" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="todosProjetos">
+        <a tabindex="0" href="listaRepositorios.html" class="todosProjetos botao"
+          aria-label="Veja todos os meus projetos do Git">Listar todos</a>
+      </div>
+    </section>
+
+    <!-- Contato Div -->
+    <section id="contato">
+      <div class="titulo">
+        <h2>CONTATO</h2>
+        <span class="separador"></span>
+        <p class="subtitulo">
+          Por favor, entre em contato por meio dos seguintes modos.
+        </p>
+      </div>
+      <div class="contato conteudo">
+        <a tabindex="0" target="_blank"
+          href="https://api.whatsapp.com/send?phone=5545456456465&text=Ol%C3%A1%2C%20vi%20o%20seu%20portf%C3%B3lio"
+          aria-label="Link para o whatsapp">whatsapp</a>
+        <a tabindex="0" href="mailto:joaomarcosp.sza@gmail.com.br"
+          aria-label="Link para enviar me enviar um email">E-mail</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p tabindex="0" class="copyright">
+      © 2024 João Marcos P. de Souza. Todos os direitos reservados.
+    </p>
+  </footer>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
