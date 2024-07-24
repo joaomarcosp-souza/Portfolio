@@ -1,11 +1,8 @@
 const repositories = document.querySelector(".principal");
 
 function getApi() {
-  const headers = {
-    Authorization: "token ghp_7Z3",
-  };
 
-  fetch("https://api.github.com/users/joaomarcosp-souza/repos", { headers })
+  fetch("https://api.github.com/users/joaomarcosp-souza/repos")
     .then(async (response) => {
       if (!response.ok) {
         throw new Error("Erro na requisição");

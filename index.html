@@ -1,44 +1,36 @@
-<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
   <title>Portfolio</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/scale.css" />
   <link rel="stylesheet" type="text/css" href="css/card.css" />
   <script src="js/index.js"></script>
 
   <link rel="shortcut icon" type="imagex/png" href="img/logo.jpg" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
 <body data-theme="dark">
   <header class="header">
-    <a
-      href="https://store.steampowered.com/app/553850/HELLDIVERS_2/"
-      class="logo fa-solid fa-jedi"
-    ></a>
+    <a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/" aria-label="Conheça o melhor jogo do mundo"
+      class="logo fa-solid fa-jedi"></a>
     <nav class="nav">
       <input type="checkbox" id="checkbox" class="checkbox" />
-      <label for="checkbox" class="label-menu"
-        ><span class="icone"></span
-      ></label>
+      <label for="checkbox" class="label-menu"><span class="icone"></span></label>
       <ul class="menu" id="menu" role="menu">
-        <li><a class="menu inicio" href="#inicio">Início</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="#tecnlogias">Tecnologias</a></li>
+        <li><a class="menu inicio" href="#inicio" aria-label="Menu link para inicio">Início</a></li>
+        <li><a href="#projetos" aria-label="Menu link para projetos">Projetos</a></li>
+        <li><a href="#contato" aria-label="Menu link para contato">Contato</a></li>
+        <li><a href="#tecnlogias" aria-label="Menu link para tecnologias">Tecnologias</a></li>
       </ul>
     </nav>
   </header>
 
   <div>
-    <a class="botao-tema" onclick="alterarTema()"
-      ><i class="fa-regular fa-lightbulb"></i
-    ></a>
+    <button class="botao-tema" onclick="alterarTema()" aria-label="Trocar tema do site">🌓</button>
   </div>
 
   <main>
@@ -48,22 +40,13 @@
         <p>Saudações!</p>
         <p>João Marcos</p>
         <p>Cursando engenharia de software, 3º Ano.</p>
-        <div class="apresentacao.texto social">
-          <a
-            href="https://github.com/joaomarcosp-souza"
-            class="fa-brands fa-github"
-            target="_blank"
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/jo%C3%A3o-marcos-715b65185/"
-            class="fa-brands fa-linkedin"
-            target="_blank"
-          ></a>
-          <a
-            href="https://letterboxd.com/VasheS/"
-            class="fa-brands fa-square-letterboxd"
-            target="_blank"
-          ></a>
+        <div class="apresentacao.texto">
+          <a href="https://github.com/joaomarcosp-souza" class="social fa-brands fa-github"
+            aria-label="Link para o meu gitgub" target="_blank"></a>
+          <a href="https://www.linkedin.com/in/jo%C3%A3o-marcos-715b65185/" class="social fa-brands fa-linkedin"
+            aria-label="Veja meu perfil no LinkedIn" target="_blank"></a>
+          <a href="https://letterboxd.com/VasheS/" class="social fa-brands fa-square-letterboxd"
+            aria-label="Link para letterboxd com os meus filmes favoritos" target="_blank"></a>
         </div>
       </div>
     </section>
@@ -71,7 +54,7 @@
     <section id="sobre-min" class="perfil">
       <div class="sobre-coluna">
         <div class="descricao">
-          <img src="img/eu.jpg" />
+          <img src="img/eu.jpg" alt="Uma foto minha" />
           <p><strong>Sobre Min</strong></p>
           <p>
             Olá, me chamo João Marcos P. de Souza, sou um apaixonado por jogos e
@@ -130,11 +113,9 @@
                 <div class="tecnologias-tag">Postgres</div>
                 <div class="tecnologias-tag">Git</div>
               </div>
-              <a
-                target="_blank"
-                href="https://github.com/joaomarcosp-souza/Jogo-POO"
-                ><img src="img/starwarsinvaders.png" alt=""
-              /></a>
+              <a target="_blank" href="https://github.com/joaomarcosp-souza/Jogo-POO"><img
+                  src="img/starwarsinvaders.png" alt="Imagem do jogo space Invaders"
+                  aria-label="Link para o repositorio do projeto - Space Invaders jogo" /></a>
             </div>
           </div>
         </div>
@@ -145,7 +126,7 @@
               <h5>Gfarm - Gestão de Fazendas</h5>
               <p>
                 Trabalho final de curso. Sistema de gestão pecuária, pessoal,
-                campo,  controle de estoque rural, histórico de medicamentos.
+                campo, controle de estoque rural, histórico de medicamentos.
               </p>
             </div>
             <div class="tags-e-banner">
@@ -155,9 +136,9 @@
                 <div class="tecnologias-tag">JavaScript</div>
                 <div class="tecnologias-tag">Bootstrap</div>
               </div>
-              <a target="_blank" href="https://github.com/joaomarcosp-souza/Tcc"
-                ><img src="img/TelaSite.png" alt=""
-              /></a>
+              <a target="_blank" href="https://github.com/joaomarcosp-souza/Tcc"><img src="img/TelaSite.png"
+                  alt="Imagem do site Gfarm, sistema de gestão de fazendas"
+                  aria-label="Link para o repositorio do projeto - Trabalho de Conclusão de Curso, Gfarm" /></a>
             </div>
           </div>
         </div>
@@ -178,19 +159,16 @@
                 <div class="tecnologias-tag">Obective-C</div>
                 <div class="tecnologias-tag">React</div>
               </div>
-              <a
-                target="_blank"
-                href="https://github.com/joaomarcosp-souza/Calculadora_Planetaria"
-                ><img src="img/conjunto-de-planetas.avif" alt=""
-              /></a>
+              <a target="_blank" href="https://github.com/joaomarcosp-souza/Calculadora_Planetaria"><img
+                  src="img/conjunto-de-planetas.avif" alt="Imagem de um aplicativo de calculadora planetaria"
+                  aria-label="Link para o repositorio do projeto - Calculadora Planetaria" /></a>
             </div>
           </div>
         </div>
       </div>
       <div class="todosProjetos">
-        <a href="todosProjetos.html" class="todosProjetos botao"
-          >Listar todos</a
-        >
+        <a href="listaRepositorios.html" class="todosProjetos botao"
+          aria-label="Veja todos os meus projetos do Git">Listar todos</a>
       </div>
     </section>
 
@@ -204,12 +182,10 @@
         </p>
       </div>
       <div class="contato conteudo">
-        <a
-          target="_blank"
+        <a target="_blank"
           href="https://api.whatsapp.com/send?phone=5545456456465&text=Ol%C3%A1%2C%20vi%20o%20seu%20portf%C3%B3lio"
-          >whatsapp</a
-        >
-        <a href="mailto:joaomarcosp.sza@gmail.com.br">E-mail</a>
+          aria-label="Link para o whatsapp">whatsapp</a>
+        <a href="mailto:joaomarcosp.sza@gmail.com.br" aria-label="Link para enviar me enviar um email">E-mail</a>
       </div>
     </section>
   </main>
@@ -220,3 +196,5 @@
     </p>
   </footer>
 </body>
+
+</html>
