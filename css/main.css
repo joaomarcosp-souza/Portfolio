@@ -8,10 +8,6 @@ html {
   padding: 0;
 }
 
-:focus {
-  outline: solid red;
-}
-
 body {
   background-color: var(--background-body, var(--theme-dark));
   margin: 0;
@@ -293,7 +289,6 @@ footer p {
   text-align: center;
 }
 
-/* BOTÃO LISTAR TODOS PROJETOS GIT */
 .todosProjetos {
   padding-top: 20px;
   display: flex;

@@ -15,18 +15,20 @@
   <body data-theme="dark">
     <header class="header">
       <span class="logo fa-solid fa-jedi"></span>
-      <nav class="nav">
+      <nav role="navigation">
         <input type="checkbox" id="checkbox" class="checkbox" />
         <label for="checkbox" class="label-menu"><span class="icone"></span></label>
         <ul class="menu" id="menu" role="menu">
-          <li tabindex="1" role="button"><a href="#apresentacao-perfil" aria-label="Menu link para inicio">Início</a>
+          <li tabindex="1" role="menuitem"><a href="#apresentacao-perfil" aria-label="Menu link para inicio">Início</a>
           </li>
-          <li tabindex="2" role="button"><a href="#projetos" aria-label="Menu link para projetos">Projetos</a></li>
-          <li tabindex="3" role="button"><a href="#contato" aria-label="Menu link para contato">Contato</a></li>
-          <li tabindex="4" role="button"><a href="#tecnologias" aria-label="Menu link para tecnologias">Tecnologias</a>
+          <li tabindex="2" role="menuitem"><a href="#projetos" aria-label="Menu link para projetos">Projetos</a></li>
+          <li tabindex="3" role="menuitem"><a href="#contato" aria-label="Menu link para contato">Contato</a></li>
+          <li tabindex="4" role="menuitem"><a href="#tecnologias"
+              aria-label="Menu link para tecnologias">Tecnologias</a>
           </li>
         </ul>
-        <button class="botao-tema" onclick="alterarTema()" aria-label="Trocar tema do site">🌓</button>
+        <button class="botao-tema" onclick="alterarTema()" aria-label="Trocar tema do site"><i
+            class="fas fa-moon"></i></button>
       </nav>
     </header>
 
