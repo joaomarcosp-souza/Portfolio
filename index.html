@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/card.css" />
+  <script src="js/index.js"></script>
+
+  <link rel="shortcut icon" type="imagex/png" href="img/logo.jpg" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body data-theme="dark">
+  <header class="header">
+    <a
+      href="https://store.steampowered.com/app/553850/HELLDIVERS_2/"
+      class="logo fa-solid fa-jedi"
+    ></a>
+    <nav class="nav">
+      <input type="checkbox" id="checkbox" class="checkbox" />
+      <label for="checkbox" class="label-menu"
+        ><span class="icone"></span
+      ></label>
+      <ul class="menu" id="menu" role="menu">
+        <li><a class="menu inicio" href="#inicio">Início</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#tecnlogias">Tecnologias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div>
+    <a class="botao-tema" onclick="alterarTema()"
+      ><i class="fa-regular fa-lightbulb"></i
+    ></a>
+  </div>
+
+  <main>
+    <!-- Sobre Min/Inicio -->
+    <section id="menu-Inicial">
+      <div class="apresentacao texto">
+        <p>Saudações!</p>
+        <p>João Marcos</p>
+        <p>Cursando engenharia de software, 3º Ano.</p>
+        <div class="apresentacao.texto social">
+          <a
+            href="https://github.com/joaomarcosp-souza"
+            class="fa-brands fa-github"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/jo%C3%A3o-marcos-715b65185/"
+            class="fa-brands fa-linkedin"
+            target="_blank"
+          ></a>
+          <a
+            href="https://letterboxd.com/VasheS/"
+            class="fa-brands fa-square-letterboxd"
+            target="_blank"
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-min" class="perfil">
+      <div class="sobre-coluna">
+        <div class="descricao">
+          <img src="img/eu.jpg" />
+          <p><strong>Sobre Min</strong></p>
+          <p>
+            Olá, me chamo João Marcos P. de Souza, sou um apaixonado por jogos e
+            filmes.
+          </p>
+          <p>
+            Na atualidade não trabalho na área, estou cursando 3° Ano de
+            Engenharia de Software no Instituto Federal de Educação, Ciência e
+            Tecnologia do Paraná - Campus Paranavaí. <br />
+            Com previsão de término para 2025.
+          </p>
+        </div>
+        <div class="skills">
+          <h5>TECNOLOGIAS</h5>
+          <div>
+            <div class="skills teste">
+              <div class="tecnologias-tag">Python</div>
+              <div class="tecnologias-tag">React</div>
+              <div class="tecnologias-tag">Java</div>
+              <div class="tecnologias-tag">Typescript</div>
+              <div class="tecnologias-tag">Django</div>
+              <div class="tecnologias-tag">JavaScript</div>
+              <div class="tecnologias-tag">Postgres</div>
+              <div class="tecnologias-tag">Bootstrap</div>
+              <div class="tecnologias-tag">CSS</div>
+              <div class="tecnologias-tag">HMTL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos Seção -->
+    <section id="projetos">
+      <div class="titulo">
+        <h2>PROJETOS</h2>
+        <span class="separador"></span>
+        <p class="subtitulo">Principais projetos para faculdade.</p>
+      </div>
+
+      <div class="projetos conteudo">
+        <!-- CARDS -->
+        <div class="card">
+          <div class="content">
+            <div class="info">
+              <h5>Star Wars: Invader</h5>
+              <p>
+                Este projeto é uma implementação do clássico jogo Space
+                Invaders, criado em Java como parte do aprendizado de
+                Programação Orientada a Objetos.
+              </p>
+            </div>
+            <div class="tags-e-banner">
+              <div class="tags">
+                <div class="tecnologias-tag">Java</div>
+                <div class="tecnologias-tag">Postgres</div>
+                <div class="tecnologias-tag">Git</div>
+              </div>
+              <a
+                target="_blank"
+                href="https://github.com/joaomarcosp-souza/Jogo-POO"
+                ><img src="img/starwarsinvaders.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="content">
+            <div class="info">
+              <h5>Gfarm - Gestão de Fazendas</h5>
+              <p>
+                Trabalho final de curso. Sistema de gestão pecuária, pessoal,
+                campo,  controle de estoque rural, histórico de medicamentos.
+              </p>
+            </div>
+            <div class="tags-e-banner">
+              <div class="tags">
+                <div class="tecnologias-tag">Python</div>
+                <div class="tecnologias-tag">Django</div>
+                <div class="tecnologias-tag">JavaScript</div>
+                <div class="tecnologias-tag">Bootstrap</div>
+              </div>
+              <a target="_blank" href="https://github.com/joaomarcosp-souza/Tcc"
+                ><img src="img/TelaSite.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="content">
+            <div class="info">
+              <h5>Calculadora Planetaria</h5>
+              <p>
+                Aplicativo para calcular o quanto você pesa em outros planetas.
+              </p>
+            </div>
+            <div class="tags-e-banner">
+              <div class="tags">
+                <div class="tecnologias-tag">JavaScript</div>
+                <div class="tecnologias-tag">Ruby</div>
+                <div class="tecnologias-tag">Java</div>
+                <div class="tecnologias-tag">Obective-C</div>
+                <div class="tecnologias-tag">React</div>
+              </div>
+              <a
+                target="_blank"
+                href="https://github.com/joaomarcosp-souza/Calculadora_Planetaria"
+                ><img src="img/conjunto-de-planetas.avif" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="todosProjetos">
+        <a href="todosProjetos.html" class="todosProjetos botao"
+          >Listar todos</a
+        >
+      </div>
+    </section>
+
+    <!-- Contato Div -->
+    <section id="contato">
+      <div class="titulo">
+        <h2>CONTATO</h2>
+        <span class="separador"></span>
+        <p class="subtitulo">
+          Por favor, entre em contato por meio dos seguintes modos.
+        </p>
+      </div>
+      <div class="contato conteudo">
+        <a
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=5545456456465&text=Ol%C3%A1%2C%20vi%20o%20seu%20portf%C3%B3lio"
+          >whatsapp</a
+        >
+        <a href="mailto:joaomarcosp.sza@gmail.com.br">E-mail</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="copyright">
+      © 2024 João Marcos P. de Souza. Todos os direitos reservados.
+    </p>
+  </footer>
+</body>
