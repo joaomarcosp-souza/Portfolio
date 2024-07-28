@@ -1,0 +1,191 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.titulo-ferramenta h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-weight: 800;
+    line-height: 56px;
+}
+
+.titulo-ferramenta p {
+    margin-bottom: 50px;
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 400px;
+}
+
+.custom-link {
+    text-decoration: none;
+    color: var(--text-gold);
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid var(--text-gold);
+    border-radius: 8px;
+    margin: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.perfil-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: var(--text-gold);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.perfil-card {
+    border: 2px solid var(--text-color-gold, var(--text-gold));
+    padding: 20px;
+    width: 350px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.perfil-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.perfil-detalhes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.perfil-info {
+    flex: 1;
+    min-width: 150px;
+}
+
+.perfil-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.perfil-nome {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-gold);
+}
+
+.perfil-detalhes h3 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #f8f8f8;
+    display: block;
+    justify-content: space-between;
+
+}
+
+.perfil-detalhes .text {
+    display: block;
+    color: gray;
+    max-height: auto;
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.perfil-detalhes .text:hover {
+    white-space: normal;
+    overflow: auto;
+    max-height: none;
+}
+
+
+/* Adicionando estilos para a busca */
+.search-bar {
+    padding: 10px 0 10px 15px;
+    border-radius: 500px;
+    background-color: #eceff1;
+    border: 1px solid transparent;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+input {
+    width: 500px;
+    font-size: inherit;
+    border-radius: 500px;
+    background-color: #eceff1;
+    outline: none !important;
+    transition: all .3s ease-in-out;
+}
+
+.pesquisa-card {
+    border: 2px solid var(--text-color-gold, var(--text-gold));
+    padding: 20px;
+    width: 1000px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 50px;
+}
+
+.pesquisa-image {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.search .perfil-header {
+    display: flex;
+    align-items: center;
+}
+
+.search .perfil-nome {
+    font-size: 25px;
+    color: var(--text-gold);
+    margin: 0;
+}
+
+.search .pesquisa-perfil {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 20px;
+}
+
+.search .pesquisa-perfil span {
+    display: block;
+    color: gray;
+}
+
+.search .perfil-info {
+    font-size: 15px;
+    margin: 5px 0;
+    color: #f8f8f8;
+    margin-left: 50px;
+}
+
+.search .perfil-info span {
+    display: block;
+    color: gray;
+    max-height: auto;
+    max-width: 350px;
+}

@@ -16,24 +16,45 @@
   </head>
 
   <body data-theme="dark">
+
+    <header class="header">
+      <span class="logo fa-solid fa-jedi"></span>
+      <nav role="navigation">
+        <input type="checkbox" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="label-menu"><span class="icone"></span></label>
+        <ul class="menu" id="menu" role="menu">
+          <li role="menuitem"><a href="/index.html" aria-label="Menu link para inicio">Início</a>
+          </li>
+          <li role="menuitem"><a href="/Ferramentas.html" aria-label="Menu link para tecnologias">Ferramentas</a>
+          </li>
+        </ul>
+        <button tabindex="-1" class="botao-tema" onclick="alterarTema()" aria-label="Trocar tema do site"><i
+            class="fas fa-moon"></i></button>
+      </nav>
+    </header>
+
     <main>
       <div class="projetos conteudo"></div>
+      <section id="projetos">
+        <div class="titulo">
+          <h2>Projetos</h2>
+          <span class="separador"></span>
+          <p class="subtitulo">
+            Lista de todos repositorios listados como publico no GitHub.
+          </p>
+        </div>
+
+        <div class="principal projetos conteudo"></div>
+      </section>
     </main>
 
-    <section id="projetos">
-      <div class="titulo">
-        <h2>Projetos</h2>
-        <span class="separador"></span>
-        <p class="subtitulo">
-          Lista de todos repositorios listados como publico no GitHub.
-        </p>
-      </div>
-
-      <div class="principal projetos conteudo"></div>
-    </section>
   </body>
   <footer>
-    <script src="js/gitAPI.js"></script>
+    <p tabindex="0" class="copyright">
+      © 2024 João Marcos P. de Souza. Todos os direitos reservados.
+    </p>
   </footer>
+  <script src="js/index.js"></script>
+  <script src="js/gitAPI.js"></script>
 
   </html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Ferramentas</title>
+    <meta charset="UTF-8" name="descricao" content="Página para um Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/scale.css" />
+    <link rel="stylesheet" type="text/css" href="css/ferramentas.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+    <link rel="shortcut icon" type="image/jpg" href="img/logo.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+</head>
+
+<body data-theme="dark">
+    <header class="header">
+        <span class="logo fa-solid fa-jedi"></span>
+        <nav role="navigation">
+            <input type="checkbox" id="checkbox" class="checkbox" />
+            <label for="checkbox" class="label-menu"><span class="icone"></span></label>
+            <ul class="menu" id="menu" role="menu">
+                <li role="menuitem"><a href="/index.html" aria-label="Menu link para inicio">Início</a>
+                </li>
+                <li role="menuitem"><a href="/ferramentas.html" aria-label="Menu link para tecnologias">Ferramentas</a>
+                </li>
+            </ul>
+            <button tabindex="-1" class="botao-tema" onclick="alterarTema()" aria-label="Trocar tema do site"><i
+                    class="fas fa-moon"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="ff">
+            <div id="vue-app" class="perfil-container">
+                <button v-on:click="getRandom()" class="btn">Personagem Aleatório</button>
+                <div class="perfil-card" v-if="random.name">
+                    <div class="perfil-header">
+                        <img :src="random.pictures[0].url" alt="Foto do Personagem" class="perfil-image">
+                        <h1 class="perfil-nome">{{random.name}}</h1>
+                    </div>
+                    <div class="perfil-detalhes">
+                        <div class="perfil-info">
+                            <h3>Raça: <span class="text">{{random.race}}</span></h3>
+                            <h3>Gênero: <span class="text">{{random.gender}}</span></h3>
+                            <h3>Idade: <span class="text">{{random.age}}</span></h3>
+                        </div>
+                        <div class="perfil-info">
+                            <h3>Origem: <span class="text">{{random.origin}}</span></h3>
+                            <h3>Classe: <span class="text">{{random.job}}</span></h3>
+                            <h3>Nome Japones: <span class="text">{{random.japaneseName}}</span></h3>
+                        </div>
+                        <h3>Descrição: <span class="text">{{random.description}}</span></h3>
+                    </div>
+                </div>
+
+                <input id="search" type="text" v-model="search" placeholder="Buscar ex. ''Aerith'' or ''07''"
+                    class="search-bar">
+                <!-- Resultados da busca -->
+                <div v-if="filtered.length" class="search">
+                    <div v-for="character in filtered" :key="character.id" class="pesquisa-card">
+                        <div class="perfil-header">
+                            <img :src="character.pictures[0].url" alt="Foto do Personagem" class="pesquisa-image">
+                            <h1 class="perfil-nome">{{character.name}}</h1>
+                            <div class="perfil-info">
+                                <h3>Raça: <span>{{character.race}}</span></h3>
+                                <h3>Gênero: <span>{{character.gender}}</span></h3>
+                                <h3>Idade: <span>{{character.age}}</span></h3>
+                            </div>
+                            <div class="perfil-info">
+                                <h3>Origem: <span>{{character.origin}}</span></h3>
+                                <h3>Classe: <span>{{character.job}}</span></h3>
+                                <h3>Nome Japonês: <span>{{character.japaneseName}}</span></h3>
+                            </div>
+                        </div>
+                        <div class="pesquisa-perfil">
+                            <h3>Descrição: <span class="">{{character.description}}</span></h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+        </section>
+    </main>
+
+    <footer>
+        <p tabindex="0" class="copyright">
+            © 2024 João Marcos P. de Souza. Todos os direitos reservados.
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/moogleAPI.js"></script>
+</body>
+
+</html>
