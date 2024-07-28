@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" href="css/card.css" />
     <link rel="shortcut icon" type="image/jpg" href="img/logo.jpg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 </head>
 
 <body data-theme="dark">
@@ -22,21 +25,20 @@
             <ul class="menu" id="menu" role="menu">
                 <li role="menuitem"><a href="/index.html" aria-label="Menu link para inicio">Início</a>
                 </li>
+                <li role="menuitem"><a href="/ferramentas.html" aria-label="Menu link para tecnologias">Ferramentas</a>
+                </li>
             </ul>
             <button tabindex="-1" class="botao-tema" onclick="alterarTema()" aria-label="Trocar tema do site"><i
                     class="fas fa-moon"></i></button>
         </nav>
     </header>
 
-    <main class="link-container">
-        <div class="titulo-ferramenta">
-            <h2>APIs</h2>
-            <p class="subtitulo">Ferramentas para avaliação da aula de programação</p>
-            <div>
-                <a href="/finalfantasy.html" class="custom-link">Final Fantasy</a>
-                <a href="/listaRepositorios.html" class="custom-link">GitHub</a>
-                <a href="/pokemons.html" class="custom-link">Pokemon</a>
-            </div>
+    <main>
+        <div class="container">
+            <h1>Buscar Pokemon</h1>
+            <input type="text" id="monsterInput" placeholder="Pesquisar Pokemon" />
+            <button id="searchButton">Buscar</button>
+            <div id="monsterResult" class="monster-result"></div>
         </div>
     </main>
 
@@ -45,6 +47,9 @@
             © 2024 João Marcos P. de Souza. Todos os direitos reservados.
         </p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/pokemonApi.js"></script>
 </body>
 
 </html>

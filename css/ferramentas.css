@@ -189,3 +189,48 @@ input {
     max-height: auto;
     max-width: 350px;
 }
+
+.container {
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
+    font-weight: 800;
+    line-height: 56px;
+}
+
+#monsterInput {
+    width: 500px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#searchButton {
+    background-color: var(--text-gold);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.monster-result {
+    width: 450px;
+    margin: 20px auto;
+    /* Centraliza horizontalmente */
+    font-size: 18px;
+    border: 1px solid var(--text-gold);
+    padding: 10px;
+    border-radius: 4px;
+    font-style: none;
+}
